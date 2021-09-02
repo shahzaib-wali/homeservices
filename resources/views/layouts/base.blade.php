@@ -61,17 +61,18 @@ use Illuminate\Support\Facades\Auth;
                 <li class="title">
                     <a href="index.php.html"><img src="images/logo.png"></a>
                 </li>
-                <li> <a href="javascript:void(0);">Air Conditioners</a>
-                    <ul class="drop-down one-column hover-fade">
-                        <li><a href="service-details/ac-wet-servicing.html">Wet Servicing</a></li>
-                        <li><a href="service-details/ac-dry-servicing.html">Dry Servicing</a></li>
-                        <li><a href="service-details/ac-installation.html">Installation</a></li>
-                        <li><a href="service-details/ac-uninstallation.html">Uninstallation</a></li>
-                        <li><a href="service-details/ac-gas-top-up.html">Gas Top Up</a></li>
-                        <li><a href="service-details/ac-gas-refill.html">Gas Refill</a></li>
-                        <li><a href="service-details/ac-repair.html">Repair</a></li>
-                    </ul>
-                </li>
+                <li> <a href="{{route('home.service_categories')}}">Service Categories</a></li>
+                {{--<li> <a href="javascript:void(0);">Air Conditioners</a>--}}
+                    {{--<ul class="drop-down one-column hover-fade">--}}
+                        {{--<li><a href="service-details/ac-wet-servicing.html">Wet Servicing</a></li>--}}
+                        {{--<li><a href="service-details/ac-dry-servicing.html">Dry Servicing</a></li>--}}
+                        {{--<li><a href="service-details/ac-installation.html">Installation</a></li>--}}
+                        {{--<li><a href="service-details/ac-uninstallation.html">Uninstallation</a></li>--}}
+                        {{--<li><a href="service-details/ac-gas-top-up.html">Gas Top Up</a></li>--}}
+                        {{--<li><a href="service-details/ac-gas-refill.html">Gas Refill</a></li>--}}
+                        {{--<li><a href="service-details/ac-repair.html">Repair</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
                 <li> <a href="#">Appliances</a>
                     <ul class="drop-down one-column hover-fade">
                         <li><a href="servicesbycategory/11.html">Computer Repair</a></li>
@@ -131,6 +132,7 @@ use Illuminate\Support\Facades\Auth;
                             <li class="login-form"> <a href="#" title="Register">My Account ({{Auth::user()->name}})</a>
                                 <ul class="drop-down one-column hover-fade">
                                     <li><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
+                                    <li><a href="{{route('admin.service_categories')}}">Service Categories</a></li>
                                     <li><a href="#" class="logout">Logout</a></li>
                                 </ul>
                             </li>
